@@ -67,10 +67,10 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-10 md:pt-12 pb-8 md:pb-10 mt-2 md:mt-4"
           >
-            <button className="px-14 py-5 bg-black text-white font-bold uppercase tracking-wider hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[200px] rounded-md shadow-lg">
+            <button className="px-16 py-6 md:py-7 bg-black text-white font-bold uppercase tracking-wider hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[220px] rounded-md shadow-lg">
               Buy $INNO
             </button>
-            <button className="px-14 py-5 bg-white border-2 border-black text-black font-bold uppercase tracking-wider hover:bg-black hover:text-white hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[200px] rounded-md shadow-md">
+            <button className="px-16 py-6 md:py-7 bg-white border-2 border-black text-black font-bold uppercase tracking-wider hover:bg-black hover:text-white hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[220px] rounded-md shadow-md">
               Learn More
             </button>
           </motion.div>
@@ -81,7 +81,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.5 }}
             className="w-full max-w-5xl mx-auto mt-12 md:mt-16 lg:mt-20"
           >
-            <div className="bg-white/90 backdrop-blur rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden">
+            <div className="bg-white/90 backdrop-blur rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden py-3 md:py-4">
               <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e8e8e8]">
                 <div className="px-10 py-14 text-center hover:bg-gray-50 transition-colors duration-300 cursor-default">
                   <div className="flex justify-center mb-3"><Heart className="w-5 h-5" /></div>
