@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="space-y-20 md:space-y-28 lg:space-y-32">
         <Hero />
         <Mission />
         <Innovators />
