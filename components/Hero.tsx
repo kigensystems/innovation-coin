@@ -53,10 +53,10 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="space-y-6 md:space-y-8"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase tracking-tight leading-[1.1] mb-2 md:mb-3">
+            <h1 className="display-1 font-bold uppercase mb-2 md:mb-3">
               Innovation Coin
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-[#999999] uppercase tracking-[0.2em] font-medium">
+            <p className="body-text text-[#999999] uppercase tracking-[0.2em] font-medium">
               Funding Tomorrow's Genius
             </p>
           </motion.div>

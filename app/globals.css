@@ -29,6 +29,44 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* Typography utilities */
+.display-1 {
+  font-size: clamp(48px, 8vw, 104px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.heading-1 {
+  font-size: clamp(32px, 6vw, 56px);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.heading-2 {
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1.15;
+}
+
+.heading-3 {
+  font-size: clamp(20px, 3vw, 28px);
+  line-height: 1.2;
+}
+
+.body-text {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+@media (min-width: 768px) {
+  .body-text { font-size: 18px; }
+}
+
+.label-text {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .container {
   width: 100%;
   max-width: 1280px;

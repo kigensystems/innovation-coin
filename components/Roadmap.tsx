@@ -72,10 +72,10 @@ export default function Roadmap() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight mb-6">
+          <h2 className="heading-1 font-bold uppercase tracking-tight mb-6">
             ROADMAP
           </h2>
-          <p className="text-lg md:text-xl text-[#999999] max-w-3xl mx-auto leading-relaxed">
+          <p className="body-text text-[#999999] max-w-3xl mx-auto">
             Our journey from concept to global impact. Each milestone brings us 
             closer to revolutionizing charitable giving through blockchain.
           </p>

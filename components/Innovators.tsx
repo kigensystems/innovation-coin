@@ -35,10 +35,10 @@ export default function Innovators() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase tracking-tight mb-8">
+          <h2 className="heading-1 font-bold uppercase tracking-tight mb-6 md:mb-8">
             The Innovators
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-[#999999] max-w-4xl mx-auto leading-relaxed">
+          <p className="body-text text-[#999999] max-w-4xl mx-auto">
             Inspired by the greatest minds of our generation, Innovation Coin embodies 
             the principles that drive world-changing innovation.
           </p>

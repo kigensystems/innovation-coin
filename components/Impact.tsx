@@ -58,10 +58,10 @@ export default function Impact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-tight mb-6">
+          <h2 className="heading-1 font-bold uppercase tracking-tight mb-6">
             REAL IMPACT
           </h2>
-          <p className="text-lg md:text-xl text-[#999999] max-w-3xl mx-auto leading-relaxed">
+          <p className="body-text text-[#999999] max-w-3xl mx-auto">
             Every transaction creates tangible change. Track our donations in real-time 
             and see the institutions and students benefiting from your participation.
           </p>
