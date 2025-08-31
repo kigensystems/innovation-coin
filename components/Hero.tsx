@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-[#f5f5f5] px-6 py-12">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="text-center flex flex-col items-center justify-center space-y-12 md:space-y-16">
+        <div className="text-center flex flex-col items-center justify-center gap-y-12 md:gap-y-16">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -51,12 +51,12 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase tracking-tight leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold uppercase tracking-tight leading-[1.1] mb-2 md:mb-3">
               Innovation Coin
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-[#999999] uppercase tracking-[0.2em] font-medium mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-[#999999] uppercase tracking-[0.2em] font-medium">
               Funding Tomorrow's Genius
             </p>
           </motion.div>
@@ -65,7 +65,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-14 pb-10"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-10 md:pt-12 pb-8 md:pb-10 mt-2 md:mt-4"
           >
             <button className="px-14 py-5 bg-black text-white font-bold uppercase tracking-wider hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[200px] rounded-md shadow-lg">
               Buy $INNO
@@ -79,7 +79,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="w-full max-w-5xl mx-auto mt-20 md:mt-24"
+            className="w-full max-w-5xl mx-auto mt-12 md:mt-16 lg:mt-20"
           >
             <div className="bg-white/90 backdrop-blur rounded-2xl shadow-xl ring-1 ring-black/5 overflow-hidden">
               <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[#e8e8e8]">
