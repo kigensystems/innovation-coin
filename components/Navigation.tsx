@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import XLogo from './XLogo';
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,8 +18,6 @@ export default function Navigation() {
 
   const navLinks = [
     { href: '#mission', label: 'Mission' },
-    { href: '#innovators', label: 'Innovators' },
-    { href: '#tokenomics', label: 'Tokenomics' },
     { href: '#impact', label: 'Impact' },
     { href: '#roadmap', label: 'Roadmap' },
   ];
@@ -33,7 +32,7 @@ export default function Navigation() {
     >
       <div className="container mx-auto">
         <div className="flex items-center justify-between h-20">
-          <a href="#" className="text-xl font-bold uppercase tracking-tight">
+          <a href="#" className="text-2xl md:text-3xl font-bold uppercase tracking-tight">
             Innovation Coin
           </a>
 
@@ -42,14 +41,20 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium uppercase tracking-wide hover:opacity-70 transition-opacity"
+                className="text-base md:text-lg font-medium uppercase tracking-wide hover:opacity-70 transition-opacity"
               >
                 {link.label}
               </a>
             ))}
-            <button className="ml-4 px-6 py-2.5 bg-black text-white font-medium uppercase tracking-wide hover:opacity-90 transition-opacity">
-              Connect
-            </button>
+            <a 
+              href="https://x.com/Innovation_Coin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity"
+              aria-label="X (formerly Twitter)"
+            >
+              <XLogo className="w-5 h-5 md:w-6 md:h-6" />
+            </a>
           </div>
 
           <button
@@ -69,14 +74,22 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-3 text-sm font-medium uppercase tracking-wide hover:opacity-70 transition-opacity"
+                className="block py-3 text-base font-medium uppercase tracking-wide hover:opacity-70 transition-opacity"
               >
                 {link.label}
               </a>
             ))}
-            <button className="w-full mt-4 px-6 py-3 bg-black text-white font-medium uppercase tracking-wide hover:opacity-90 transition-opacity">
-              Connect Wallet
-            </button>
+            <a 
+              href="https://x.com/Innovation_Coin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center py-3 hover:opacity-70 transition-opacity"
+              aria-label="X (formerly Twitter)"
+            >
+              <XLogo className="w-5 h-5" />
+              <span className="ml-2 text-base font-medium uppercase tracking-wide">X</span>
+            </a>
           </div>
         </div>
       )}

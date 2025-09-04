@@ -1,60 +1,46 @@
-import { Twitter, Github, MessageCircle } from 'lucide-react';
+import { Users } from 'lucide-react';
+import XLogo from './XLogo';
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-12 md:py-16 px-6">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 md:gap-12 mb-12">
-          <div>
-            <h3 className="text-2xl font-bold tracking-tighter mb-4">
-              INNOVATION<span className="opacity-60">COIN</span>
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+          <div className="text-center md:text-left mb-8 md:mb-0">
+            <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-2">
+              INNOVATION COIN
             </h3>
-            <p className="text-sm opacity-80">
-              Funding tomorrow's genius through blockchain innovation.
+            <p className="text-base md:text-lg opacity-80 uppercase tracking-wider">
+              Funding tomorrow&apos;s genius
             </p>
           </div>
-          <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Whitepaper</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Audit Report</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Contract</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Documentation</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Community</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Telegram</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Discord</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Twitter</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Medium</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-sm uppercase tracking-wider mb-4">Legal</h4>
-            <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Terms of Service</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Privacy Policy</a></li>
-              <li><a href="#" className="hover:opacity-100 transition-opacity">Disclaimer</a></li>
-            </ul>
+          
+          <div className="flex gap-6 items-center">
+            <a 
+              href="https://x.com/Innovation_Coin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+              aria-label="X (formerly Twitter)"
+            >
+              <XLogo className="w-6 h-6" />
+            </a>
+            <a 
+              href="https://x.com/i/communities/1963293818104811621" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
+              <Users className="w-6 h-6" />
+              <span className="text-sm md:text-base font-medium uppercase tracking-wide">Community</span>
+            </a>
           </div>
         </div>
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm opacity-60 mb-4 md:mb-0">
+        
+        <div className="mt-12 pt-8 border-t border-white/20 text-center">
+          <p className="text-xs md:text-sm opacity-60">
             © 2024 Innovation Coin. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <a href="#" className="hover:scale-110 transition-transform">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:scale-110 transition-transform">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="#" className="hover:scale-110 transition-transform">
-              <MessageCircle className="w-5 h-5" />
-            </a>
-          </div>
         </div>
       </div>
     </footer>

@@ -1,20 +1,28 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const spaceMono = Space_Mono({
-  weight: ['400', '700'],
+const robotoMono = Roboto_Mono({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
-  variable: '--font-space-mono',
+  variable: '--font-roboto-mono',
 });
 
 export const metadata: Metadata = {
   title: "Innovation Coin - Funding Tomorrow's Genius",
-  description: "A revolutionary cryptocurrency where 100% of transaction fees fund education and nurture the next generation of innovators.",
+  description: "The cryptocurrency that funds education. Every transaction directly supports schools and students worldwide.",
   keywords: "cryptocurrency, blockchain, education, innovation, charity, web3",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     title: "Innovation Coin - Funding Tomorrow's Genius",
-    description: "A revolutionary cryptocurrency where 100% of transaction fees fund education.",
+    description: "The cryptocurrency that funds education. Every transaction directly supports schools and students worldwide.",
     type: "website",
   },
 };
@@ -26,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${spaceMono.variable} font-mono antialiased`}>
+      <body className={`${robotoMono.variable} font-mono antialiased`}>
         {children}
       </body>
     </html>

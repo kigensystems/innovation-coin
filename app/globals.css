@@ -1,10 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #f5f5f5;
   --foreground: #000000;
   --card-bg: #ffffff;
-  --card-dark: #000000;
   --gray-light: #e8e8e8;
   --gray-medium: #999999;
   --accent: #000000;
@@ -23,10 +24,10 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-family: 'Roboto Mono', 'Courier New', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 /* Typography utilities */

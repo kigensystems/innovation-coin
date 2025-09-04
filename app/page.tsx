@@ -1,7 +1,5 @@
 import Hero from '@/components/Hero';
 import Mission from '@/components/Mission';
-import Innovators from '@/components/Innovators';
-import Tokenomics from '@/components/Tokenomics';
 import Impact from '@/components/Impact';
 import Roadmap from '@/components/Roadmap';
 import Navigation from '@/components/Navigation';
@@ -11,11 +9,9 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <main className="space-y-20 md:space-y-28 lg:space-y-32">
+      <main className="space-y-16 md:space-y-20 lg:space-y-24">
         <Hero />
         <Mission />
-        <Innovators />
-        <Tokenomics />
         <Impact />
         <Roadmap />
       </main>
