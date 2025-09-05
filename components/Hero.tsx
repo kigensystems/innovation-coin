@@ -46,7 +46,7 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-6"
           >
-            <a href="https://pump.fun/board" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <a href="https://pump.fun/coin/A9qDXrmSoWg9howQ3gUdNoKRebvuKiZSC9EDpHqepump" target="_blank" rel="noopener noreferrer" className="inline-block">
               <button className="px-12 py-5 bg-black text-white font-bold uppercase tracking-wider hover:scale-105 hover:shadow-xl transition-all duration-300 text-sm min-w-[200px] rounded-md shadow-lg">
                 Buy $INNO
               </button>
