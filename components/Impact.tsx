@@ -32,7 +32,7 @@ export default function Impact() {
       description: 'Jack Kent Cooke Foundation, QuestBridge.'
     },
     { 
-      value: 'Dfn...WAwj', 
+      value: 'EFN...XzVb', 
       label: 'Donation Wallet',
       description: 'Tap to copy full address.',
       isWallet: true,

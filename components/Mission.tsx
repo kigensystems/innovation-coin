@@ -117,7 +117,7 @@ export default function Mission() {
                 <div className="text-xs mt-1 text-[#999999] normal-case tracking-normal">Jack Kent Cooke Foundation, QuestBridge.</div>
               </div>
               <div className="bg-[#f5f5f5] p-6 md:p-8 rounded-xl text-center cursor-pointer hover:bg-[#efefef] transition-colors">
-                <div className="text-xl md:text-2xl font-bold mb-2 font-mono">Dfn...WAwj</div>
+                <div className="text-xl md:text-2xl font-bold mb-2 font-mono">EFN...XzVb</div>
                 <div className="text-xs uppercase tracking-[0.12em] text-[#666666] font-semibold">Donation Wallet</div>
                 <div className="text-xs mt-1 text-[#999999] normal-case tracking-normal">Tap to copy full address.</div>
               </div>
